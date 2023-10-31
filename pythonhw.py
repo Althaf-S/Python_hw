@@ -44,6 +44,18 @@ def panagram(s):
 s = input("Enter your string here to check if it is panagram: ")     
 panagram(s)
 
-
+#program to print the key value dictionary
+def freq(s):
+ dict = {} 
+ for i in s:
+   if i in dict:
+     dict[i] += 1
+   else:
+     dict[i] = 1
+  
+ print(dict)
+ 
+s = input("Enter your string : ")
+freq(s)
 
 
