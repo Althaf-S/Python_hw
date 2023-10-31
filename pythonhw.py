@@ -13,6 +13,7 @@ def fizzbizz(n):
 n = int(input("Enter any number to do operations : "))
 fizzbizz(n)
 
+#program to find whether given string is palindrome or not
 def palindrome(s):
   w= ''
   for i in s:
@@ -24,6 +25,24 @@ def palindrome(s):
     
 s = input("Enter your string to check if it is palindrome: ")
 palindrome(s)
+
+
+#program to find whether provided string is panagaram
+def panagram(s):
+  c = 0
+  
+  s = s.lower()
+  alphabets = "abcdefghijklmnopqrstuvwxyz"
+  for i in alphabets: 
+    if i in s:
+      c += 1
+  if c == len(alphabets):
+    print("The provided string is panagram")
+  else :
+    print("The provided string is not panagram")
+
+s = input("Enter your string here to check if it is panagram: ")     
+panagram(s)
 
 
 
