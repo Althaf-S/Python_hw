@@ -1,6 +1,7 @@
 import unittest
 from pythonhw import panagram
 from pythonhw import palindrome
+from pythonhw import freq
 
 class TestPanagram(unittest.TestCase):
     def testIsPanagram(self):
@@ -26,6 +27,20 @@ class TestPalindrome(unittest.TestCase):
     def testSingleInputPalindrome(self):
         sentence = palindrome("a")
         self.assertTrue(sentence)
+        
+class TestFreq(unittest.TestCase):
+    def testCasesensitiveFreq(self):
+        sentence = "Hello World"
+        self.assertTrue(freq(sentence))
+    def testNormalFreq(self):
+        sentence = "Hello World"
+        self.assertTrue(freq(sentence))
+    def testSymbolFreq(self):
+        sentence = "Hello-w-o-rld"
+        self.assertTrue(freq(sentence))
+    def testNullInputDict(self):
+        space = freq("")
+        self.assertFalse(space)
         
 if __name__ == "__main__":
   unittest.main()
