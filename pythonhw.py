@@ -13,7 +13,17 @@ def fizzbizz(n):
 n = int(input("Enter any number to do operations : "))
 fizzbizz(n)
 
-
+def palindrome(s):
+  w= ''
+  for i in s:
+    w = i + w
+  if w == s:
+    print("The string you provided is palindrome")
+  else :
+    print("The string you provided is not palindrome")
+    
+s = input("Enter your string to check if it is palindrome: ")
+palindrome(s)
 
 
 
