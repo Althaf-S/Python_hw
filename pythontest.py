@@ -27,7 +27,7 @@ class TestPalindrome(unittest.TestCase):
     def testSingleInputPalindrome(self):
         sentence = palindrome("a")
         self.assertTrue(sentence)
-        
+               
 class TestFreq(unittest.TestCase):
     def testCasesensitiveFreq(self):
         sentence = "Hello World"
@@ -45,4 +45,3 @@ class TestFreq(unittest.TestCase):
 if __name__ == "__main__":
   unittest.main()
    
-        
