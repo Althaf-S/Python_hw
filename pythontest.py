@@ -30,14 +30,9 @@ class TestPalindrome(unittest.TestCase):
                
 class TestFreq(unittest.TestCase):
     def testCasesensitiveFreq(self):
-        sentence = "Hello World"
-        self.assertTrue(freq(sentence))
-    def testNormalFreq(self):
-        sentence = "Hello World"
-        self.assertTrue(freq(sentence))
-    def testSymbolFreq(self):
-        sentence = "Hello-w-o-rld"
-        self.assertTrue(freq(sentence))
+        sentence = "abbac"
+        out = {'a': 2, 'b': 2, 'c': 1}
+        self.assertDictEqual(freq(sentence),out)
     def testNullInputDict(self):
         space = freq("")
         self.assertFalse(space)
