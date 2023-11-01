@@ -8,4 +8,7 @@ def test_add_two_operand():
   
 def test_sub_two_operand():
   assert evaluation("23-") == -1
+  
+def test_mul_two_operand():
+  assert evaluation("3*4") == 12
    
