@@ -11,4 +11,7 @@ def test_sub_two_operand():
   
 def test_mul_two_operand():
   assert evaluation("54*") == 20
+  
+def test_div_two_operand():
+  assert evaluation("62/") == 3
    
