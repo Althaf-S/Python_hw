@@ -5,4 +5,7 @@ def test_single_operand():
   
 def test_add_two_operand():
   assert evaluation("23+") == 5
+  
+def test_sub_two_operand():
+  assert evaluation("23-") == -1
    
