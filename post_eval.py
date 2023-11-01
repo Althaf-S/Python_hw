@@ -11,7 +11,7 @@ def evaluation(expression):
        elif i == "*":
          stack.append(operand2 * operand1)
        elif i == "/":
-         stack.append(operand2 / operand1)
+         stack.append(operand2 // operand1)
      else:
         stack.append(int(i))
    
